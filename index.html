@@ -1,104 +1,231 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/all.min.css" />
-    <link rel="stylesheet" href="css/index.css" />
-    <link rel="stylesheet" href="css/nornalize.css" />
-
-    <title>كلاش_CLASH</title>
-
-    <!-- الفووووونت  -->
-<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
-
-    <!-- رابط الخط من Google Fonts -->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
-    <!--start header-->
-    <!--start header-->
-    <!--start header-->
-    <div class="header">
-      <div class="container">
-        <div class="logo"><img src="image/logo.jpeg" alt="" /></div>
-        <div class="name">
-          <h1><span>CLASH</span></h1>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>كافيه كيدزوني - التجمع الخامس</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <div class="container">
+            <h1 class="logo">    Kidzony café</h1>
+            <nav class="nav">
+                <a href="#home">الرئيسية</a>
+                <a href="#about">عن المكان</a>
+                <a href="#birthday">حجز عيد ميلاد</a>
+                <a href="#gallery">معرض الصور</a>
+                <a href="#contact">تواصل معنا</a>
+            </nav>
+            <div class="mobile-menu-btn" onclick="toggleMenu()">☰</div>
         </div>
-      </div>
-    </div>
-    <!--start  profile-->
-    <!--start  profile-->
-    <!--start  profile-->
-    <div class="profile">
-      <div class="container">
-        <div class="image"><img src="image/caram.jpeg" alt="" /></div>
-        <div class="text">
-          <span> كلاش_CLASH </span>
-          <p>#كلاش_ميتوصاش</p>
-        </div>
-        <div class="icon">
-          
-          <a href="https://www.tiktok.com/@clash57?_t=ZS-8yEnBFCZWpb&_r=1"
-          ><i class="fa-brands fa-tiktok"></i
-            ></a>
-            
-            <a href="https://www.instagram.com/clash9645?igsh=N3c2cTBkYnUwNDRh"
-            ><i class="fa-brands fa-instagram"></i
-              ></a>
-              <a href="https://api.whatsapp.com/send?phone=201090407125"
-              ><i class="fab fa-whatsapp"></i
-                ></a>
-                <a
-                href="https://www.facebook.com/ClashBurgerAndFriedChicken?mibextid=wwXIfr&rdid=hV8otKhz2mU3EKxX&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F16pNgCCMMX%2F%3Fmibextid%3DwwXIfr#"
-                ><i class="fa-brands fa-facebook"></i
-                  ></a>
-                  <a href="tel:01090407125"><i class="fa-solid fa-phone"></i></a>
-        </div>
-      </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="#home" onclick="toggleMenu()">الرئيسية</a>
+        <a href="#about" onclick="toggleMenu()">عن المكان</a>
+        <a href="#birthday" onclick="toggleMenu()">حجز عيد ميلاد</a>
+        <a href="#gallery" onclick="toggleMenu()">معرض الصور</a>
+        <a href="#contact" onclick="toggleMenu()">تواصل معنا</a>
     </div>
 
-    <!--start   contant-->
-    <!--start   contant-->
-    <!--start   contant-->
-    <div class="contant">
-      <div class="container">
-        <!-- <br /> -->
-        <div class="col">
-          <a href="menu/menu.html">
-            <pre><i class="fa-solid fa-bars"></i>            meunu          <span>>>></span></pre>
-          </a>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h2 class="hero-title">مرحباً بكم في كافيه كيدزوني</h2>
+            <p class="hero-subtitle">🎈 مكان مثالي للعب والمرح والاحتفال بأعياد ميلاد أطفالكم 🎂</p>
+            <a href="#birthday" class="cta-button">احجز     الآن</a>
         </div>
-        <br />
-        <div class="col">
-          <a
-            href="https://maps.app.goo.gl/a2hXuskriA322MBB9?g_st=ic"
-          >
-            <pre><i class="fa-solid fa-location-dot"></i>          location          <span>>>></span></pre>
-          </a>
-        </div>
-        <br />
-        <div class="col">
-          <a href="tel:01090407125">
-            <pre><i class="fa-solid fa-phone"></i>               الاتصال         <span>>>></span></pre>
-          </a>
+    </section>
 
-        
-        </div>
-        <br>
-                    <div class="col  offers">
-          <a href="offers/offers.html">
-            <pre> </i>             offers          <span>>>></span></pre>
-          </a>
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">عن كافيه كيدزوني</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>🎪 كافيه كيدزوني هو المكان الأمثل للأطفال والعائلات في التجمع الخامس. نوفر بيئة آمنة ومليئة بالمرح حيث يمكن لأطفالكم الاستمتاع بـ:</p>
+                    <ul class="features-list">
+                        <li>🎯 منطقة ألعاب آمنة ومجهزة للأطفال (كيدز إريا)</li>
+                        <li>🎨 أنشطة تلوين وإبداعية</li>
+                        <li>🤸‍♂️ ترامبولين وألعاب حركية</li>
+                        <li>🏰 مطبخ ألعاب تفاعلي</li>
+                        <li>🎪 حفلات أعياد ميلاد مميزة</li>
+                        <li>☕ كافيه للأهل بأجواء مريحة</li>
+                    </ul>
+                </div>
+            </div>
 
-        
-        </div>
-      </div>
-    </div>
+            <div class="pricing-box">
+                <h3>  اسعار الكيدز اريا 🎫</h3>
+                <div class="pricing-grid">
+                    <div class="price-item">
+                        <span class="hour">الساعة الأولى</span>
+                        <span class="price">100 جنيه</span>
+                    </div>
+                    <div class="price-item">
+                        <span class="hour">فى حالة الاخوات  </span>
+                        <span class="price">  يتم خصم 10%</span>
+                    </div>
 
-    <div class="time"><div class="container"></div></div>
-  </body>
+                </div>
+                <p class="pricing-note">💡 يتوفر أيضاً منيو مشروبات وأكل منفصل</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Birthday Package Section -->
+    <section id="birthday" class="birthday">
+        <div class="container">
+            <h2 class="section-title">🎂 حجز عيد ميلاد مميز</h2>
+            <p class="section-intro">احتفلوا بأعياد ميلاد أطفالكم في جو من المرح والمتعة مع باقاتنا المميزة</p>
+
+            <div class="packages-grid">
+                <!-- Private Booking -->
+                <div class="package-card highlight">
+                    <div class="package-icon">🏰</div>
+                    <h3>حجز المكان برايفت</h3>
+                    <div class="package-price">3500 جنيه/ساعة</div>
+                    <ul class="package-features">
+                        <li>✅ المكان بالكامل لكم وحدكم</li>
+                        <li>✅  استخدام الكيدز إريا بالكامل مجاني</li>
+                        <li>✅ خصوصية تامة للاحتفال</li>
+                        <li>✅ جو مميز من المرح واللعب</li>
+                    </ul>
+                </div>
+
+                <!-- Partition Booking -->
+                <div class="package-card">
+                    <div class="package-icon">🎈</div>
+                    <h3>حجز بارتيشن</h3>
+                    <div class="package-price-multi">
+                        <span>الساعة 1: 100 ج</span>
+                        <span>  فى حالة الاخوات  يتم خصم 10%    </span>
+                     </div>
+                    <ul class="package-features">
+                        <li>✅ مساحة خاصة بك</li>
+                        <li>✅ جو مريح ومميز</li>
+                        <li>✅ مرونة في اختيار المدة</li>
+                        <li>✅ سعر مناسب</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Additional Services -->
+            <div class="services-section">
+                <h3 class="services-title">🎁 الخدمات الإضافية</h3>
+
+                <div class="services-grid">
+                    <div class="service-card">
+                        <h4>🎂 سرفيس التورتة</h4>
+                        <p class="service-price">50 جنيه للفرد</p>
+                        <p class="service-desc">شامل التقديم والأطباق والشوك</p>
+                    </div>
+
+                    <div class="service-card">
+                        <h4>🎨 الديكور</h4>
+                        <p class="service-price">  3500 جنيه</p>
+                        <p class="service-desc">حسب اختياركم، يضيف لمسة مميزة للحفل</p>
+                    </div>
+                </div>
+
+                <div class="entertainment-section">
+                    <h4>🎭 الفقرات الترفيهية</h4>
+                    <div class="entertainment-grid">
+                        <div class="entertainment-item">🎩 الساحر</div>
+                        <div class="entertainment-item">🎭 شخصيات وعرايس</div>
+                        <div class="entertainment-item">🤡 الكلاون</div>
+                        <div class="entertainment-item">🎵 الدي جي</div>
+                    </div>
+                </div>
+
+                <div class="external-services">
+                    <p>⚠️ <strong>ملحوظة:</strong> إحضار خدمات من خارج المكان يتطلب رسوم إضافية 300 جنيه على كل خدمة</p>
+                </div>
+            </div>
+
+            <!-- Benefits -->
+            <div class="benefits-section">
+                <h3>⭐ مميزات الحجز في كيدزوني كافيه</h3>
+                <div class="benefits-grid">
+                    <div class="benefit-item">
+                        <div class="benefit-icon">🎪</div>
+                        <h4>جو من المرح والمتعة</h4>
+                        <p>أطفالكم سيستمتعون بالكيدز إريا والأنشطة المميزة</p>
+                    </div>
+                    <div class="benefit-item">
+                        <div class="benefit-icon">✨</div>
+                        <h4>خدمات مميزة</h4>
+                        <p>سرفيس التورتة، الديكور، والفقرات الترفيهية</p>
+                    </div>
+                    <div class="benefit-item">
+                        <div class="benefit-icon">🏡</div>
+                        <h4>جو مريح</h4>
+                        <p>بيئة آمنة ومريحة للأطفال والعائلات</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery">
+        <div class="container">
+            <h2 class="section-title">📸 معرض الصور</h2>
+            <p class="section-intro">شاهدوا لحظات المرح والسعادة في كافيه كيدزوني</p>
+
+            <div class="gallery-grid" id="galleryGrid">
+                <!-- Images will be loaded here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">📞 تواصل معنا</h2>
+
+            <div class="contact-grid">
+                <div class="contact-card">
+                    <div class="contact-icon">📱</div>
+                    <h3>واتساب</h3>
+                    <a href="https://wa.me/201023778863" target="_blank" class="contact-link">01023778863</a>
+                    <p>اترك رسالة وسيتم التواصل معك فوراً</p>
+                </div>
+
+                <div class="contact-card">
+                    <div class="contact-icon">📍</div>
+                    <h3>العنوان</h3>
+                    <p>التجمع الخامس، شارع الجزيرة</p>
+                    <p>خلف كمبوند درة لايف مول</p>
+                    <a href="https://g.co/kgs/2YCHo6x" target="_blank" class="contact-link">افتح الخريطة</a>
+                </div>
+
+                <div class="contact-card">
+                    <div class="contact-icon">⏰</div>
+                    <h3>مواعيد العمل</h3>
+                    <p>يومياً من 10 صباحاً حتى 12 منتصف الليل</p>
+                    <p>للحجز يرجى التواصل معنا مسبقاً</p>
+                </div>
+            </div>
+
+            <div class="cta-section">
+                <h3>  🎉 الوقت للمرح! احجز الآن</h3>
+                <a href="https://wa.me/201023778863" target="_blank" class="cta-button large">احجز الآن عبر واتساب</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 كافيه كيدزوني - جميع الحقوق محفوظة</p>
+            <p>صُمم بـ ❤️ للأطفال والعائلات</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
 </html>
