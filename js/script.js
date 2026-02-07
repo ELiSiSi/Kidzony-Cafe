@@ -1,102 +1,20 @@
-// Gallery Images Data
-const galleryImages = [
-  {
-    url: '../image/1 (1).jpeg',
-    alt: 'طفلة في منطقة التلوين',
-  },
-  {
-    url: '../image/1 (2).jpeg',
-    alt: 'أطفال يلعبون على الترامبولين',
-  },
-  {
-    url: '../image/1 (3).jpeg',
-    alt: 'منطقة الترامبولين',
-  },
-  {
-    url: '../image/1 (4).jpeg',
-    alt: 'منطقة الجلوس الخارجية',
-  },
-  {
-    url: '../image/1 (5).jpeg',
-    alt: 'أرجوحة للأطفال',
-  },
-  {
-    url: '../image/1 (6).jpeg',
-    alt: 'طفلة تعرض رسمتها',
-  },
-  {
-    url: '../image/1 (7).jpeg',
-    alt: 'أطفال في منطقة الكرات الملونة',
-  },
-  {
-    url: '../image/1 (8).jpeg',
-    alt: 'أطفال في المطبخ التفاعلي',
-  },
-  {
-    url: '../image/1 (9).jpeg',
-    alt: 'طفلة تلون في الكيدز إريا',
-  },
-  // {
-  //   url: '../image/1 (11).jpeg',
-  //   alt: 'أطفال يلعبون في منطقة الألعاب',
-  // },
-  // {
-  //   url: '../image',
-  //   alt: 'أطفال في منطقة التلوين',
-  // },
-  // {
-  //   url: '../image',
-  //   alt: 'منطقة حوض الكرات',
-  // },
-  // {
-  //   url: '../image',
-  //   alt: 'المنطقة الخارجية للكافيه',
-  // },
-  // {
-  //   url: '../image',
-  //   alt: 'طفل في المطبخ التفاعلي',
-  // },
-  // {
-  //   url: '../image',
-  //   alt: 'منطقة اللعب بالكرات',
-  // },
-  // {
-  //   url: '../image',
-  //   alt: 'طفلة تلعب في المطبخ',
-  // },
-];
-
-// Load Gallery Images
-function loadGallery() {
-  const galleryGrid = document.getElementById('galleryGrid');
-
-  galleryImages.forEach((image, index) => {
-    const galleryItem = document.createElement('div');
-    galleryItem.className = 'gallery-item';
-    galleryItem.style.animationDelay = `${index * 0.1}s`;
-
-    const img = document.createElement('img');
-    img.src = image.url;
-    img.alt = image.alt;
-    img.loading = 'lazy';
-
-    galleryItem.appendChild(img);
-    galleryGrid.appendChild(galleryItem);
-
-    // Add click event to open image in new tab
-    galleryItem.addEventListener('click', function () {
-      window.open(image.url, '_blank');
-    });
-  });
-}
-
 // Toggle Mobile Menu
 function toggleMenu() {
   const mobileMenu = document.getElementById('mobileMenu');
   mobileMenu.classList.toggle('active');
 }
 
-// Smooth Scrolling for Navigation Links
+// Close mobile menu when clicking outside
+document.addEventListener('click', function (event) {
+  const mobileMenu = document.getElementById('mobileMenu');
+  const menuBtn = document.querySelector('.mobile-menu-btn');
+
+  if (!mobileMenu.contains(event.target) && !menuBtn.contains(event.target)) {
+    mobileMenu.classList.remove('active');
+  }
+});
+
+// Smooth scrolling for anchor links
 document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
   anchor.addEventListener('click', function (e) {
     e.preventDefault();
@@ -112,23 +30,36 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
 
 // Add scroll effect to header
 let lastScroll = 0;
-window.addEventListener('scroll', function () {
-  const header = document.querySelector('.header');
+const header = document.querySelector('.header');
+
+window.addEventListener('scroll', () => {
   const currentScroll = window.pageYOffset;
 
-  if (currentScroll > lastScroll && currentScroll > 100) {
-    header.style.transform = 'translateY(-100%)';
+  if (currentScroll > 100) {
+    header.style.boxShadow = '0 4px 20px rgba(0, 0, 0, 0.15)';
   } else {
-    header.style.transform = 'translateY(0)';
+    header.style.boxShadow = '0 2px 10px rgba(0, 0, 0, 0.1)';
   }
 
   lastScroll = currentScroll;
 });
 
-// Add animation on scroll
+// Gallery lightbox effect (simple version)
+const galleryItems = document.querySelectorAll('.gallery-item');
+galleryItems.forEach((item) => {
+  item.addEventListener('click', function () {
+    // Simple zoom effect - you can add a proper lightbox library if needed
+    this.style.transform =
+      this.style.transform === 'scale(1.5)' ? 'scale(1)' : 'scale(1.5)';
+    this.style.zIndex = this.style.zIndex === '10' ? '1' : '10';
+    this.style.transition = 'all 0.3s ease';
+  });
+});
+
+// Animate elements on scroll
 const observerOptions = {
   threshold: 0.1,
-  rootMargin: '0px 0px -100px 0px',
+  rootMargin: '0px 0px -50px 0px',
 };
 
 const observer = new IntersectionObserver(function (entries) {
@@ -140,33 +71,16 @@ const observer = new IntersectionObserver(function (entries) {
   });
 }, observerOptions);
 
-// Observe all sections and cards
+// Observe package cards and other elements
 document.addEventListener('DOMContentLoaded', function () {
-  loadGallery();
-
-  const elementsToAnimate = document.querySelectorAll(
-    '.package-card, .service-card, .benefit-item, .contact-card, .gallery-item'
+  const animatedElements = document.querySelectorAll(
+    '.package-card, .service-card, .benefit-item, .contact-card'
   );
-  elementsToAnimate.forEach((el) => {
+
+  animatedElements.forEach((el) => {
     el.style.opacity = '0';
     el.style.transform = 'translateY(30px)';
-    el.style.transition = 'all 0.6s ease';
+    el.style.transition = 'all 0.6s ease-out';
     observer.observe(el);
   });
-});
-
-// WhatsApp button click tracking
-document.querySelectorAll('a[href^="https://wa.me"]').forEach((link) => {
-  link.addEventListener('click', function () {
-    console.log('WhatsApp button clicked');
-  });
-});
-
-// Add loading animation
-window.addEventListener('load', function () {
-  document.body.style.opacity = '0';
-  setTimeout(function () {
-    document.body.style.transition = 'opacity 0.5s';
-    document.body.style.opacity = '1';
-  }, 100);
 });
