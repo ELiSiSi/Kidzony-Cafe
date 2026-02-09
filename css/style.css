@@ -952,6 +952,189 @@ section {
     gap: 15px;                  /* مسافة بين الصور */
     padding: 0 20px;            /* مسافة من الجوانب */
 }
+/* ────────────────────────────────────────
+           Responsive للموبايل
+   ──────────────────────────────────────── */
+
+@media (max-width: 768px) {
+
+    /* عام */
+    .container {
+        padding-left: 14px;
+        padding-right: 14px;
+    }
+
+    section {
+        padding: 50px 0;
+    }
+
+    .section-title {
+        font-size: 32px;
+        line-height: 1.2;
+    }
+
+    .section-intro {
+        font-size: 17px;
+    }
+
+    /* Header + Navigation */
+    .logo {
+        font-size: 22px;
+    }
+
+    .mobile-menu-btn {
+        display: block;
+    }
+
+    .nav {
+        display: none;
+    }
+
+    .mobile-menu a {
+        font-size: 18px;
+        padding: 16px;
+    }
+
+    /* Hero – أهم جزء */
+    .hero {
+        padding: 70px 14px 90px;
+    }
+
+    .hero-title {
+        font-size: 34px;
+        line-height: 1.15;
+    }
+
+    .hero-subtitle {
+        font-size: 19px;
+        margin-bottom: 28px;
+    }
+
+    .cta-button {
+        padding: 16px 38px;
+        font-size: 18px;
+    }
+
+    /* القوائم + الكروت */
+    .pricing-grid,
+    .packages-grid,
+    .services-grid,
+    .benefits-grid,
+    .contact-grid,
+    .gallery-grid {
+        grid-template-columns: 1fr;
+        gap: 24px;
+    }
+
+    /* الكروت */
+    .package-card,
+    .service-card,
+    .benefit-item,
+    .contact-card {
+        padding: 28px 20px;
+    }
+
+    .package-price {
+        font-size: 38px;
+    }
+
+    .package-card h3,
+    .services-title,
+    .benefits-section h3 {
+        font-size: 26px;
+    }
+
+    /* المنيو – مهم جدًا */
+    .menu-images-track img {
+        height: clamp(300px, 62vh, 380px) !important;
+        max-width: 88vw;
+        border-radius: 12px;
+    }
+
+    .menu-hint {
+        font-size: 15px;
+        padding: 0 10px;
+        margin-top: 16px;
+    }
+
+    /* معرض الصور */
+    .gallery-item img {
+        height: 240px;
+    }
+
+    /* Contact */
+    .contact-icon {
+        font-size: 52px;
+    }
+
+    .contact-card h3 {
+        font-size: 24px;
+    }
+
+    .contact-link {
+        font-size: 20px;
+    }
+
+    .cta-section h3 {
+        font-size: 28px;
+    }
+
+    .cta-button.large {
+        padding: 18px 42px;
+        font-size: 19px;
+    }
+}
+
+
+@media (max-width: 480px) {
+
+    .hero {
+        padding-top: 60px;
+        padding-bottom: 80px;
+    }
+
+    .hero-title {
+        font-size: 30px;
+    }
+
+    .hero-subtitle {
+        font-size: 17px;
+    }
+
+    .section-title {
+        font-size: 28px;
+    }
+
+    .cta-button {
+        padding: 14px 34px;
+        font-size: 17px;
+        min-width: 220px;
+    }
+
+    .package-card,
+    .service-card,
+    .benefit-item,
+    .contact-card {
+        padding: 24px 16px;
+    }
+
+    .menu-images-track img {
+        height: clamp(260px, 55vh, 320px);
+    }
+
+    .gallery-item img {
+        height: 210px;
+    }
+
+    .contact-icon {
+        font-size: 48px;
+    }
+
+    .social-media-section a {
+        padding: 14px 28px;
+        font-size: 16px;
+    }
+}
 
 .menu-images-track img {
     height: 480px;              /* ارتفاع ثابت – غيّره حسب اللي يناسبك */
