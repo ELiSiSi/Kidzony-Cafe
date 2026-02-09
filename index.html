@@ -1,337 +1,597 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ar" dir="rtl">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="كافيه كيدزوني - التجمع الخامس - مكان مثالي للأطفال والعائلات مع كيدز إريا مميزة">
-    <meta name="keywords" content="كافيه أطفال، كيدز إريا، عيد ميلاد، التجمع الخامس، كيدزوني">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="كافيه كيدزوني - التجمع الخامس - مكان مثالي للأطفال والعائلات مع كيدز إريا مميزة" />
+    <meta
+      name="keywords"
+      content="كافيه أطفال، كيدز إريا، عيد ميلاد، التجمع الخامس، كيدزوني" />
     <title>كافيه كيدزوني - التجمع الخامس | مكان مثالي للأطفال والعائلات</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css" />
     <!-- Font Awesome for Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-</head>
-<body>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  </head>
+  <body>
     <!-- Header Section -->
     <header class="header">
-        <div class="container">
-            <h1 class="logo">Kidzony Café</h1>
-            <nav class="nav">
-                <a href="#home">الرئيسية</a>
-                <a href="#about">عن المكان</a>
-                <a href="#birthday">حجز عيد ميلاد</a>
-                <a href="#gallery">معرض الصور</a>
-                <a href="#contact">تواصل معنا</a>
-            </nav>
-            <div class="mobile-menu-btn" onclick="toggleMenu()">☰</div>
-        </div>
+      <div class="container">
+        <h1 class="logo">Kidzony Café</h1>
+        <nav class="nav">
+          <a href="#home">الرئيسية</a>
+          <a href="#about">عن المكان</a>
+          <a href="#birthday">حجز عيد ميلاد</a>
+          <a href="#gallery">معرض الصور</a>
+          <a href="#contact">تواصل معنا</a>
+        </nav>
+        <div class="mobile-menu-btn" onclick="toggleMenu()">☰</div>
+      </div>
     </header>
 
     <!-- Mobile Menu -->
     <div class="mobile-menu" id="mobileMenu">
-        <a href="#home" onclick="toggleMenu()">الرئيسية</a>
-        <a href="#about" onclick="toggleMenu()">عن المكان</a>
-        <a href="#birthday" onclick="toggleMenu()">حجز عيد ميلاد</a>
-        <a href="#gallery" onclick="toggleMenu()">معرض الصور</a>
-        <a href="#contact" onclick="toggleMenu()">تواصل معنا</a>
+      <a href="#home" onclick="toggleMenu()">الرئيسية</a>
+      <a href="#about" onclick="toggleMenu()">عن المكان</a>
+      <a href="#birthday" onclick="toggleMenu()">حجز عيد ميلاد</a>
+      <a href="#gallery" onclick="toggleMenu()">معرض الصور</a>
+      <a href="#contact" onclick="toggleMenu()">تواصل معنا</a>
     </div>
 
     <!-- Hero Section -->
     <section id="home" class="hero">
-        <div class="hero-content">
-            <h2 class="hero-title">مرحباً بكم في كافيه كيدزوني</h2>
-            <p class="hero-subtitle">🎈 مكان مثالي للعب والمرح والاحتفال بأعياد ميلاد أطفالكم 🎂</p>
-            <a href="#birthday" class="cta-button">احجز الآن</a>
-        </div>
+      <div class="hero-content">
+        <h2 class="hero-title">مرحباً بكم في كافيه كيدزوني</h2>
+        <p class="hero-subtitle">
+          🎈 مكان مثالي للعب والمرح والاحتفال بأعياد ميلاد أطفالكم 🎂
+        </p>
+        <a href="#birthday" class="cta-button">احجز الآن</a>
+      </div>
     </section>
 
     <!-- About Section -->
     <section id="about" class="about">
-        <div class="container">
-            <h2 class="section-title">لماذا كافيه كيدزوني؟</h2>
-            <div class="about-content">
-                <div class="about-text">
-                    <p>🎪 كافيه كيدزوني هو المكان المثالي للأطفال والعائلات في التجمع الخامس. نوفر بيئة آمنة ومليئة بالمرح حيث يمكن للأهل الاستمتاع بوقتهم ومراقبة أطفالهم وهم يلعبون:</p>
-                    <ul class="features-list">
-                        <li>   مناسبة للأطفال من سن سنة ونصف حتى ٨ سنين  </li>
-                        <li>👨‍👩‍👧‍👦 مناسب للأهل والأطفال - تقدر تشوف أولادك وأنت قاعد</li>
-                        <li>🚬 منطقة للتدخين والشيشة في الأوت دور</li>
-                        <li>⚽ بيت الكور - منطقة لعب آمنة ومليئة بالمرح</li>
-                        <li>لعبة الطرامبولين ٢ حارة</li>
-                        <li>🎨 أنشطة الرسم والتلوين على الجبس</li>
-                        <li>🪁 مرجيحة للأطفال</li>
-                        <li>👥 مشرفين متخصصين على الأطفال</li>
-                        <li>☕ كافيه للأهل بأجواء مريحة</li>
-                        <li>🎪 حفلات أعياد ميلاد مميزة</li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="pricing-box">
-                <h3>أسعار الكيدز إريا 🎫</h3>
-                <div class="pricing-grid">
-                    <div class="price-item">
-                        <span class="hour">الساعة  </span>
-                        <span class="price">100 جنيه</span>
-                    </div>
-                    <div class="price-item">
-                        <span class="hour">فى حالة الاخوات  </span>
-                        <span class="price">  يتم خصم 10%</span>
-                    </div>
-                    <div class="price-item">
-                        <span class="hour"> اليوم كامل      </span>
-                        <span class="price">        300 جنيه بحد أقصى ٦ ساعات</span>
-                    </div>
-                </div>
-                <p class="pricing-note">💡 يتوفر أيضاً منيو مشروبات وأكل منفصل</p>
-            </div>
+      <div class="container">
+        <h2 class="section-title">لماذا كافيه كيدزوني؟</h2>
+        <div class="about-content">
+          <div class="about-text">
+            <p>
+              🎪 كافيه كيدزوني هو المكان المثالي للأطفال والعائلات في التجمع
+              الخامس. نوفر بيئة آمنة ومليئة بالمرح حيث يمكن للأهل الاستمتاع
+              بوقتهم ومراقبة أطفالهم وهم يلعبون:
+            </p>
+            <ul class="features-list">
+              <li>مناسبة للأطفال من سن سنة ونصف حتى ٨ سنين</li>
+              <li>👨‍👩‍👧‍👦 مناسب للأهل والأطفال - تقدر تشوف أولادك وأنت قاعد</li>
+              <li>🚬 منطقة للتدخين والشيشة في الأوت دور</li>
+              <li>⚽ بيت الكور - منطقة لعب آمنة ومليئة بالمرح</li>
+              <li>لعبة الطرامبولين ٢ حارة</li>
+              <li>🎨 أنشطة الرسم والتلوين على الجبس</li>
+              <li>🪁 مرجيحة للأطفال</li>
+              <li>👥 مشرفين متخصصين على الأطفال</li>
+              <li>☕ كافيه للأهل بأجواء مريحة</li>
+              <li>🎪 حفلات أعياد ميلاد مميزة</li>
+            </ul>
+          </div>
         </div>
+
+        <div class="pricing-box">
+          <h3>أسعار الكيدز إريا 🎫</h3>
+          <div class="pricing-grid">
+            <div class="price-item">
+              <span class="hour">الساعة </span>
+              <span class="price">100 جنيه</span>
+            </div>
+            <div class="price-item">
+              <span class="hour">فى حالة الاخوات </span>
+              <span class="price"> يتم خصم 10%</span>
+            </div>
+            <div class="price-item">
+              <span class="hour"> اليوم كامل </span>
+              <span class="price"> 300 جنيه بحد أقصى ٦ ساعات</span>
+            </div>
+          </div>
+          <p class="pricing-note">💡 يتوفر أيضاً منيو مشروبات وأكل منفصل</p>
+        </div>
+      </div>
     </section>
 
-    <!-- Birthday Package Section -->
-    <section id="birthday" class="birthday">
-        <div class="container">
-            <h2 class="section-title">🎂 حجز عيد ميلاد مميز</h2>
-            <p class="section-intro">احتفلوا بأعياد ميلاد أطفالكم في جو من المرح والمتعة مع باقاتنا المميزة</p>
+<!-- Menu Section -->
+<section id="menu" class="menu-section">
+    <div class="container">
+        <h2 class="section-title"> THE MENU    </h2>
 
-            <div class="packages-grid">
-                <!-- Private Booking -->
-                <div class="package-card highlight">
-                    <div class="package-icon">🏰</div>
-                    <h3>حجز المكان برايفت</h3>
-                    <div class="package-price">2500 جنيه/ساعة</div>
-                    <ul class="package-features">
-                        <li>✅ المكان بالكامل لكم وحدكم</li>
-                        <li>✅ استخدام الكيدز إريا بالكامل مجاناً</li>
-                        <li>✅ خصوصية تامة للاحتفال</li>
-                        <li>✅ جو مميز من المرح واللعب</li>
-                        <li>✅ الأفضل للحفلات الكبيرة</li>
-                    </ul>
-                </div>
-
-                <!-- Partition Booking -->
-                <div class="package-card">
-                    <div class="package-icon">🎈</div>
-                    <h3>حجز بارتيشن</h3>
-                    <div class="package-price-multi">
-                        <span>الساعة الأولى: 100 جنيه</span>
-                        <span>    فى حالة الاخوات يتم خصم 10%   </span>
-                     </div>
-                    <ul class="package-features">
-                        <li>✅ مساحة خاصة بك</li>
-                        <li>✅ جو مريح ومميز</li>
-                        <li>✅ مرونة في اختيار المدة</li>
-                        <li>✅ سعر مناسب</li>
-                        <li>✅ مثالي للحفلات الصغيرة</li>
-                    </ul>
-                </div>
-            </div>
-
-            <!-- Additional Services -->
-            <div class="services-section">
-                <h3 class="services-title">🎁 الخدمات الإضافية</h3>
-
-                <div class="services-grid">
-                    <div class="service-card">
-                        <h4>🎂 سرفيس التورتة</h4>
-                        <p class="service-price">50 جنيه للفرد</p>
-                        <p class="service-desc">شامل التقديم والأطباق والشوك</p>
-                    </div>
-
-                    <div class="service-card">
-                        <h4>🎨 الديكور</h4>
-                        <p class="service-price">1500 - 3500 جنيه</p>
-                        <p class="service-desc">حسب اختياركم، يضيف لمسة مميزة للحفل</p>
-                    </div>
-                </div>
-
-                <div class="entertainment-section">
-                    <h4>🎭 الفقرات الترفيهية</h4>
-                    <div class="entertainment-grid">
-                        <div class="entertainment-item">🎩 الساحر</div>
-                        <div class="entertainment-item">🎭 شخصيات وعرايس</div>
-                        <div class="entertainment-item">🤡 الكلاون</div>
-                        <div class="entertainment-item">🎵 الدي جي</div>
-                    </div>
-                    <p style="text-align: center; margin-top: 20px; font-size: 17px; font-weight: 600; color: #673AB7;">
-                        🎪 يمكنكم اختيار الفقرات التي تناسب أطفالكم لإضافة المزيد من المرح للحفل
-                    </p>
-                </div>
-
-                <div class="external-services">
-                    <p>⚠️ <strong>ملحوظة مهمة:</strong> إحضار خدمات من خارج المكان (مثل: الديكور، الفقرات، التصوير) يتطلب رسوم إضافية 300 جنيه على كل خدمة</p>
-                </div>
-            </div>
-
-            <!-- Benefits -->
-            <div class="benefits-section">
-                <h3>⭐ مميزات الحجز في كيدزوني كافيه</h3>
-                <div class="benefits-grid">
-                    <div class="benefit-item">
-                        <div class="benefit-icon">🎪</div>
-                        <h4>جو من المرح والمتعة</h4>
-                        <p>أطفالكم سيستمتعون بالكيدز إريا والأنشطة المميزة مع مشرفين متخصصين</p>
-                    </div>
-                    <div class="benefit-item">
-                        <div class="benefit-icon">👀</div>
-                        <h4>راحة الأهل</h4>
-                        <p>تقدر تشوف أولادك وأنت قاعد في جو مريح مع منطقة مخصصة للتدخين</p>
-                    </div>
-                    <div class="benefit-item">
-                        <div class="benefit-icon">✨</div>
-                        <h4>خدمات شاملة</h4>
-                        <p>سرفيس التورتة، الديكور، والفقرات الترفيهية المتنوعة</p>
-                    </div>
-                    <div class="benefit-item">
-                        <div class="benefit-icon">🏡</div>
-                        <h4>بيئة آمنة</h4>
-                        <p>مكان آمن ونظيف مع إشراف كامل على الأطفال</p>
-                    </div>
-                </div>
+        <div class="menu-images-scroller">
+            <div class="menu-images-track">
+                <img src="./image/menu/1 (1).jpg" alt="منيو 1" loading="lazy">
+                <img src="./image/menu/1 (2).jpg" alt="منيو 2" loading="lazy">
+                <img src="./image/menu/1 (3).jpg" alt="منيو 3" loading="lazy">
+                <img src="./image/menu/1 (4).jpg" alt="منيو 4" loading="lazy">
+                <img src="./image/menu/1 (5).jpg" alt="منيو 5" loading="lazy">
+                <img src="./image/menu/1 (6).jpg" alt="منيو 6" loading="lazy">
+                <img src="./image/menu/1 (7).jpg" alt="منيو 7" loading="lazy">
+                <img src="./image/menu/1 (8).jpg" alt="منيو 8" loading="lazy">
+                <img src="./image/menu/1 (9).jpg" alt="منيو 9" loading="lazy">
+                <img src="./image/menu/1 (10).jpg" alt="منيو 10" loading="lazy">
+                <img src="./image/menu/1 (11).jpg" alt="منيو 11" loading="lazy">
+                <img src="./image/menu/1 (12).jpg" alt="منيو 12" loading="lazy">
+                <img src="./image/menu/1 (13).jpg" alt="منيو 13" loading="lazy">
             </div>
         </div>
+
+        <p class="menu-hint">← اسحب لليمين واليسار لعرض باقي الصفحات</p>
+    </div>
+</section>
+    <!-- Birthday Package Section -->
+    <section id="birthday" class="birthday">
+      <div class="container">
+        <h2 class="section-title">🎂 حجز عيد ميلاد مميز</h2>
+        <p class="section-intro">
+          احتفلوا بأعياد ميلاد أطفالكم في جو من المرح والمتعة مع باقاتنا المميزة
+        </p>
+
+        <div class="packages-grid">
+          <!-- Private Booking -->
+          <div class="package-card highlight">
+            <div class="package-icon">🏰</div>
+            <h3>حجز المكان برايفت</h3>
+            <div class="package-price">3500 جنيه/ساعة</div>
+            <ul class="package-features">
+              <li>✅شامل الكافيه والكيدز اريا</li>
+              <li>✅ استخدام الكيدز إريا بالكامل مجاناً</li>
+              <li>✅ خصوصية تامة للاحتفال</li>
+              <li>✅ جو مميز من المرح واللعب</li>
+              <li>✅ الأفضل للحفلات الكبيرة</li>
+            </ul>
+          </div>
+
+          <!-- Partition Booking -->
+          <div class="package-card">
+            <div class="package-icon">🎈</div>
+            <h3>حجز بارتيشن</h3>
+            <div class="package-price-multi">
+              <span>الساعة الأولى: 100 جنيه</span>
+              <span> فى حالة الاخوات يتم خصم 10% </span>
+            </div>
+            <ul class="package-features">
+              <li>✅ مساحة خاصة بك</li>
+              <li>✅ جو مريح ومميز</li>
+              <li>✅ مرونة في اختيار المدة</li>
+              <li>✅ سعر مناسب</li>
+              <li>✅ مثالي للحفلات الصغيرة</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Additional Services -->
+        <div class="services-section">
+          <h3 class="services-title">🎁 الخدمات الإضافية</h3>
+
+          <div class="services-grid">
+            <div class="service-card">
+              <h4>🎂 سرفيس التورتة</h4>
+              <p class="service-price">50 جنيه للفرد</p>
+              <p class="service-desc">شامل التقديم والأطباق والشوك</p>
+            </div>
+
+            <div class="service-card">
+              <h4>🎨 الديكور</h4>
+              <p class="service-price">1500 - 3500 جنيه</p>
+              <p class="service-desc">حسب اختياركم، يضيف لمسة مميزة للحفل</p>
+            </div>
+          </div>
+
+          <div class="entertainment-section">
+            <h4>🎭 الفقرات الترفيهية</h4>
+            <div class="entertainment-grid">
+              <div class="entertainment-item">🎩 الساحر</div>
+              <div class="entertainment-item">🎭 شخصيات وعرايس</div>
+              <div class="entertainment-item">🤡 الكلاون</div>
+              <div class="entertainment-item">🎵 الدي جي</div>
+            </div>
+            <p
+              style="
+                text-align: center;
+                margin-top: 20px;
+                font-size: 17px;
+                font-weight: 600;
+                color: #673ab7;
+              ">
+              🎪 يمكنكم اختيار الفقرات التي تناسب أطفالكم لإضافة المزيد من المرح
+              للحفل
+            </p>
+          </div>
+
+          <div class="external-services">
+            <p>
+              ⚠️ <strong>ملحوظة مهمة:</strong> إحضار خدمات من خارج المكان (مثل:
+              الديكور، الفقرات، التصوير) يتطلب رسوم إضافية 300 جنيه على كل خدمة
+            </p>
+          </div>
+        </div>
+
+        <!-- Benefits -->
+        <div class="benefits-section">
+          <h3>⭐ مميزات الحجز في كيدزوني كافيه</h3>
+          <div class="benefits-grid">
+            <div class="benefit-item">
+              <div class="benefit-icon">🎪</div>
+              <h4>جو من المرح والمتعة</h4>
+              <p>
+                أطفالكم سيستمتعون بالكيدز إريا والأنشطة المميزة مع مشرفين
+                متخصصين
+              </p>
+            </div>
+            <div class="benefit-item">
+              <div class="benefit-icon">👀</div>
+              <h4>راحة الأهل</h4>
+              <p>
+                تقدر تشوف أولادك وأنت قاعد في جو مريح مع منطقة مخصصة للتدخين
+              </p>
+            </div>
+            <div class="benefit-item">
+              <div class="benefit-icon">✨</div>
+              <h4>خدمات شاملة</h4>
+              <p>سرفيس التورتة، الديكور، والفقرات الترفيهية المتنوعة</p>
+            </div>
+            <div class="benefit-item">
+              <div class="benefit-icon">🏡</div>
+              <h4>بيئة آمنة</h4>
+              <p>مكان آمن ونظيف مع إشراف كامل على الأطفال</p>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- Gallery Section -->
     <section id="gallery" class="gallery">
-        <div class="container">
-            <h2 class="section-title">📸 معرض الصور</h2>
-            <p class="section-intro">شاهدوا لحظات المرح والسعادة في كافيه كيدزوني</p>
+      <div class="container">
+        <h2 class="section-title">📸 معرض الصور</h2>
+        <p class="section-intro">
+          شاهدوا لحظات المرح والسعادة في كافيه كيدزوني
+        </p>
 
-            <div class="gallery-grid" id="galleryGrid">
-                <div class="gallery-item">
-                    <img src="image/1 (1).jpeg" alt="كيدزوني كافيه - كيدز إريا">
-                </div>
-                <div class="gallery-item">
-                    <img src="image/1 (1).jpg" alt="كيدزوني كافيه - منطقة اللعب">
-                </div>
-                <div class="gallery-item">
-                    <img src="image/1 (2).jpeg" alt="كيدزوني كافيه - بيت الكور">
-                </div>
-                <div class="gallery-item">
-                    <img src="image/1 (3).jpeg" alt="كيدزوني كافيه - أنشطة الأطفال">
-                </div>
-                <div class="gallery-item">
-                    <img src="image/1 (4).jpeg" alt="كيدزوني كافيه - حفلات أعياد الميلاد">
-                </div>
-                <div class="gallery-item">
-                    <img src="image/1 (5).jpeg" alt="كيدزوني كافيه - منطقة الألعاب">
-                </div>
-                <div class="gallery-item">
-                    <img src="image/1 (6).jpeg" alt="كيدزوني كافيه - الديكورات">
-                </div>
-                <div class="gallery-item">
-                    <img src="image/1 (7).jpeg" alt="كيدزوني كافيه - أجواء المرح">
-                </div>
-                <div class="gallery-item">
-                    <img src="image/1 (8).jpeg" alt="كيدزوني كافيه - منطقة الجلوس">
-                </div>
-                <div class="gallery-item">
-                    <img src="image/1 (9).jpeg" alt="كيدزوني كافيه - التلوين والرسم">
-                </div>
-                <div class="gallery-item">
-                    <img src="image/1 (10).jpeg" alt="كيدزوني كافيه - المرجيحة">
-                </div>
-                <div class="gallery-item">
-                    <img src="image/1 (11).jpeg" alt="كيدزوني كافيه - أطفال سعداء">
-                </div>
-            </div>
-
-            <div style="text-align: center; margin-top: 40px;">
-                <p style="font-size: 20px; font-weight: 700; color: #2C2C2C; margin-bottom: 20px;">
-                    📱 تابعونا على السوشيال ميديا لمزيد من الصور والفيديوهات
-                </p>
-                <div style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; margin-top: 25px;">
-                    <a href="https://www.instagram.com/reel/DAGRyt2sRZM/?igsh=amdnd3AyenNoZG9u" target="_blank" style="display: inline-flex; align-items: center; gap: 12px; padding: 18px 35px; background: linear-gradient(135deg, #833AB4 0%, #FD1D1D 50%, #F77737 100%); color: white; text-decoration: none; border-radius: 50px; font-weight: 700; font-size: 18px; transition: all 0.3s; box-shadow: 0 4px 15px rgba(131, 58, 180, 0.4);" onmouseover="this.style.transform='translateY(-5px) scale(1.05)'; this.style.boxShadow='0 8px 25px rgba(131, 58, 180, 0.6)';" onmouseout="this.style.transform='translateY(0) scale(1)'; this.style.boxShadow='0 4px 15px rgba(131, 58, 180, 0.4)';">
-                        <i class="fab fa-instagram" style="font-size: 28px;"></i>
-                        إنستجرام
-                    </a>
-                    <a href="https://www.facebook.com/share/1Ge62YGXR8/" target="_blank" style="display: inline-flex; align-items: center; gap: 12px; padding: 18px 35px; background: linear-gradient(135deg, #1877F2 0%, #0C63D4 100%); color: white; text-decoration: none; border-radius: 50px; font-weight: 700; font-size: 18px; transition: all 0.3s; box-shadow: 0 4px 15px rgba(24, 119, 242, 0.4);" onmouseover="this.style.transform='translateY(-5px) scale(1.05)'; this.style.boxShadow='0 8px 25px rgba(24, 119, 242, 0.6)';" onmouseout="this.style.transform='translateY(0) scale(1)'; this.style.boxShadow='0 4px 15px rgba(24, 119, 242, 0.4)';">
-                        <i class="fab fa-facebook-f" style="font-size: 28px;"></i>
-                        فيسبوك
-                    </a>
-                    <a href="https://wa.me/201023778863" target="_blank" style="display: inline-flex; align-items: center; gap: 12px; padding: 18px 35px; background: linear-gradient(135deg, #25D366 0%, #128C7E 100%); color: white; text-decoration: none; border-radius: 50px; font-weight: 700; font-size: 18px; transition: all 0.3s; box-shadow: 0 4px 15px rgba(37, 211, 102, 0.4);" onmouseover="this.style.transform='translateY(-5px) scale(1.05)'; this.style.boxShadow='0 8px 25px rgba(37, 211, 102, 0.6)';" onmouseout="this.style.transform='translateY(0) scale(1)'; this.style.boxShadow='0 4px 15px rgba(37, 211, 102, 0.4)';">
-                        <i class="fab fa-whatsapp" style="font-size: 28px;"></i>
-                        واتساب
-                    </a>
-                </div>
-            </div>
+        <div class="gallery-grid" id="galleryGrid">
+          <div class="gallery-item">
+            <img src="image/1 (1).jpeg" alt="كيدزوني كافيه - كيدز إريا" />
+          </div>
+          <div class="gallery-item">
+            <img src="image/1 (1).jpg" alt="كيدزوني كافيه - منطقة اللعب" />
+          </div>
+          <div class="gallery-item">
+            <img src="image/1 (2).jpeg" alt="كيدزوني كافيه - بيت الكور" />
+          </div>
+          <div class="gallery-item">
+            <img src="image/1 (3).jpeg" alt="كيدزوني كافيه - أنشطة الأطفال" />
+          </div>
+          <div class="gallery-item">
+            <img
+              src="image/1 (4).jpeg"
+              alt="كيدزوني كافيه - حفلات أعياد الميلاد" />
+          </div>
+          <div class="gallery-item">
+            <img src="image/1 (5).jpeg" alt="كيدزوني كافيه - منطقة الألعاب" />
+          </div>
+          <div class="gallery-item">
+            <img src="image/1 (6).jpeg" alt="كيدزوني كافيه - الديكورات" />
+          </div>
+          <div class="gallery-item">
+            <img src="image/1 (7).jpeg" alt="كيدزوني كافيه - أجواء المرح" />
+          </div>
+          <div class="gallery-item">
+            <img src="image/1 (8).jpeg" alt="كيدزوني كافيه - منطقة الجلوس" />
+          </div>
+          <div class="gallery-item">
+            <img src="image/1 (9).jpeg" alt="كيدزوني كافيه - التلوين والرسم" />
+          </div>
+          <div class="gallery-item">
+            <img src="image/1 (10).jpeg" alt="كيدزوني كافيه - المرجيحة" />
+          </div>
+          <div class="gallery-item">
+            <img src="image/1 (11).jpeg" alt="كيدزوني كافيه - أطفال سعداء" />
+          </div>
         </div>
+
+        <div style="text-align: center; margin-top: 40px">
+          <p
+            style="
+              font-size: 20px;
+              font-weight: 700;
+              color: #2c2c2c;
+              margin-bottom: 20px;
+            ">
+            📱 تابعونا على السوشيال ميديا لمزيد من الصور والفيديوهات
+          </p>
+          <div
+            style="
+              display: flex;
+              justify-content: center;
+              gap: 20px;
+              flex-wrap: wrap;
+              margin-top: 25px;
+            ">
+            <a
+              href="https://www.instagram.com/reel/DAGRyt2sRZM/?igsh=amdnd3AyenNoZG9u"
+              target="_blank"
+              style="
+                display: inline-flex;
+                align-items: center;
+                gap: 12px;
+                padding: 18px 35px;
+                background: linear-gradient(
+                  135deg,
+                  #833ab4 0%,
+                  #fd1d1d 50%,
+                  #f77737 100%
+                );
+                color: white;
+                text-decoration: none;
+                border-radius: 50px;
+                font-weight: 700;
+                font-size: 18px;
+                transition: all 0.3s;
+                box-shadow: 0 4px 15px rgba(131, 58, 180, 0.4);
+              "
+              onmouseover="
+                this.style.transform = 'translateY(-5px) scale(1.05)';
+                this.style.boxShadow = '0 8px 25px rgba(131, 58, 180, 0.6)';
+              "
+              onmouseout="
+                this.style.transform = 'translateY(0) scale(1)';
+                this.style.boxShadow = '0 4px 15px rgba(131, 58, 180, 0.4)';
+              ">
+              <i class="fab fa-instagram" style="font-size: 28px"></i>
+              إنستجرام
+            </a>
+            <a
+              href="https://www.facebook.com/share/1Ge62YGXR8/"
+              target="_blank"
+              style="
+                display: inline-flex;
+                align-items: center;
+                gap: 12px;
+                padding: 18px 35px;
+                background: linear-gradient(135deg, #1877f2 0%, #0c63d4 100%);
+                color: white;
+                text-decoration: none;
+                border-radius: 50px;
+                font-weight: 700;
+                font-size: 18px;
+                transition: all 0.3s;
+                box-shadow: 0 4px 15px rgba(24, 119, 242, 0.4);
+              "
+              onmouseover="
+                this.style.transform = 'translateY(-5px) scale(1.05)';
+                this.style.boxShadow = '0 8px 25px rgba(24, 119, 242, 0.6)';
+              "
+              onmouseout="
+                this.style.transform = 'translateY(0) scale(1)';
+                this.style.boxShadow = '0 4px 15px rgba(24, 119, 242, 0.4)';
+              ">
+              <i class="fab fa-facebook-f" style="font-size: 28px"></i>
+              فيسبوك
+            </a>
+            <a
+              href="https://wa.me/201023778863"
+              target="_blank"
+              style="
+                display: inline-flex;
+                align-items: center;
+                gap: 12px;
+                padding: 18px 35px;
+                background: linear-gradient(135deg, #25d366 0%, #128c7e 100%);
+                color: white;
+                text-decoration: none;
+                border-radius: 50px;
+                font-weight: 700;
+                font-size: 18px;
+                transition: all 0.3s;
+                box-shadow: 0 4px 15px rgba(37, 211, 102, 0.4);
+              "
+              onmouseover="
+                this.style.transform = 'translateY(-5px) scale(1.05)';
+                this.style.boxShadow = '0 8px 25px rgba(37, 211, 102, 0.6)';
+              "
+              onmouseout="
+                this.style.transform = 'translateY(0) scale(1)';
+                this.style.boxShadow = '0 4px 15px rgba(37, 211, 102, 0.4)';
+              ">
+              <i class="fab fa-whatsapp" style="font-size: 28px"></i>
+              واتساب
+            </a>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- Contact Section -->
     <section id="contact" class="contact">
-        <div class="container">
-            <h2 class="section-title">📞 تواصل معنا</h2>
-            <p class="section-intro">نحن في خدمتكم للإجابة على استفساراتكم وحجز عيد ميلاد طفلكم</p>
+      <div class="container">
+        <h2 class="section-title">📞 تواصل معنا</h2>
+        <p class="section-intro">
+          نحن في خدمتكم للإجابة على استفساراتكم وحجز عيد ميلاد طفلكم
+        </p>
 
-            <div class="contact-grid">
-                <div class="contact-card">
-                    <div class="contact-icon">
-                        <i class="fab fa-whatsapp" style="font-size: 60px;"></i>
-                    </div>
-                    <h3>واتساب</h3>
-                    <a href="https://wa.me/201023778863" target="_blank" class="contact-link">010 23778863</a>
-                    <p>اترك رسالة وسيتم التواصل معك فوراً</p>
-                    <p style="margin-top: 15px; font-size: 15px; opacity: 0.9;">الطريقة الأسرع للتواصل والحجز</p>
-                </div>
-
-                <div class="contact-card">
-                    <div class="contact-icon">
-                        <i class="fas fa-map-marker-alt" style="font-size: 60px;"></i>
-                    </div>
-                    <h3>العنوان</h3>
-                    <p><strong>التجمع الخامس</strong></p>
-                    <p>شارع الجزيرة</p>
-                    <p>خلف كمبوند درة لايف مول</p>
-                    <a href="https://g.co/kgs/2YCHo6x" target="_blank" class="contact-link">
-                        <i class="fas fa-map-marked-alt"></i> افتح الخريطة
-                    </a>
-                </div>
-
-                <div class="contact-card">
-                    <div class="contact-icon">
-                        <i class="far fa-clock" style="font-size: 60px;"></i>
-                    </div>
-                    <h3>مواعيد العمل</h3>
-                    <p><strong>يومياً</strong></p>
-                    <p>من 10 صباحاً حتى 2 بعد منتصف الليل    </p>
-                    <p style="margin-top: 15px; color: var(--sunny-yellow); font-weight: 700;">
-                        ⚠️ للحجز يرجى التواصل معنا مسبقاً
-                    </p>
-                </div>
+        <div class="contact-grid">
+          <div class="contact-card">
+            <div class="contact-icon">
+              <i class="fab fa-whatsapp" style="font-size: 60px"></i>
             </div>
+            <h3>واتساب</h3>
+            <a
+              href="https://wa.me/201023778863"
+              target="_blank"
+              class="contact-link"
+              >010 23778863</a
+            >
+            <p>اترك رسالة وسيتم التواصل معك فوراً</p>
+            <p style="margin-top: 15px; font-size: 15px; opacity: 0.9">
+              الطريقة الأسرع للتواصل والحجز
+            </p>
+          </div>
 
-            <div class="cta-section">
-                <h3>🎉 جهز حفلة عيد ميلاد لا تُنسى لطفلك!</h3>
-                <a href="https://wa.me/201023778863" target="_blank" class="cta-button large">احجز الآن عبر واتساب</a>
+          <div class="contact-card">
+            <div class="contact-icon">
+              <i class="fas fa-map-marker-alt" style="font-size: 60px"></i>
             </div>
+            <h3>العنوان</h3>
+            <p><strong>التجمع الخامس</strong></p>
+            <p>شارع الجزيرة</p>
+            <p>خلف كمبوند درة لايف مول</p>
+            <a
+              href="https://g.co/kgs/2YCHo6x"
+              target="_blank"
+              class="contact-link">
+              <i class="fas fa-map-marked-alt"></i> افتح الخريطة
+            </a>
+          </div>
+
+          <div class="contact-card">
+            <div class="contact-icon">
+              <i class="far fa-clock" style="font-size: 60px"></i>
+            </div>
+            <h3>مواعيد العمل</h3>
+            <p><strong>يومياً</strong></p>
+            <p>من 10 صباحاً حتى 2 بعد منتصف الليل</p>
+            <p
+              style="
+                margin-top: 15px;
+                color: var(--sunny-yellow);
+                font-weight: 700;
+              ">
+              ⚠️ للحجز يرجى التواصل معنا مسبقاً
+            </p>
+          </div>
         </div>
+
+        <div class="cta-section">
+          <h3>🎉 جهز حفلة عيد ميلاد لا تُنسى لطفلك!</h3>
+          <a
+            href="https://wa.me/201023778863"
+            target="_blank"
+            class="cta-button large"
+            >احجز الآن عبر واتساب</a
+          >
+        </div>
+      </div>
     </section>
 
     <!-- Footer -->
     <footer class="footer">
-        <div class="container">
-            <p>&copy; 2024 كافيه كيدزوني - التجمع الخامس - جميع الحقوق محفوظة</p>
-            <p>صُمم بـ ❤️ للأطفال والعائلات</p>
-            <p style="margin-top: 15px; font-size: 14px;">
-                📱 010 23778863 | 📍 التجمع الخامس - شارع الجزيرة
-            </p>
+      <div class="container">
+        <p>&copy; 2024 كافيه كيدزوني - التجمع الخامس - جميع الحقوق محفوظة</p>
+        <p>صُمم بـ ❤️ للأطفال والعائلات</p>
+        <p style="margin-top: 15px; font-size: 14px">
+          📱 010 23778863 | 📍 التجمع الخامس - شارع الجزيرة
+        </p>
 
-            <!-- Social Media Links in Footer -->
-            <div style="margin-top: 25px; display: flex; justify-content: center; gap: 20px; flex-wrap: wrap;">
-                <a href="https://www.instagram.com/reel/DAGRyt2sRZM/?igsh=amdnd3AyenNoZG9u" target="_blank" style="display: inline-flex; align-items: center; justify-content: center; width: 50px; height: 50px; border-radius: 50%; background: rgba(255,255,255,0.1); color: white; font-size: 24px; text-decoration: none; transition: all 0.3s; border: 2px solid rgba(255,255,255,0.2);" onmouseover="this.style.background='rgba(255,255,255,0.2)'; this.style.transform='scale(1.15) rotate(5deg)'; this.style.borderColor='rgba(255,255,255,0.4)';" onmouseout="this.style.background='rgba(255,255,255,0.1)'; this.style.transform='scale(1) rotate(0deg)'; this.style.borderColor='rgba(255,255,255,0.2)';" title="إنستجرام">
-                    <i class="fab fa-instagram"></i>
-                </a>
-                <a href="https://www.facebook.com/share/1Ge62YGXR8/" target="_blank" style="display: inline-flex; align-items: center; justify-content: center; width: 50px; height: 50px; border-radius: 50%; background: rgba(255,255,255,0.1); color: white; font-size: 24px; text-decoration: none; transition: all 0.3s; border: 2px solid rgba(255,255,255,0.2);" onmouseover="this.style.background='rgba(255,255,255,0.2)'; this.style.transform='scale(1.15) rotate(5deg)'; this.style.borderColor='rgba(255,255,255,0.4)';" onmouseout="this.style.background='rgba(255,255,255,0.1)'; this.style.transform='scale(1) rotate(0deg)'; this.style.borderColor='rgba(255,255,255,0.2)';" title="فيسبوك">
-                    <i class="fab fa-facebook-f"></i>
-                </a>
-                <a href="https://wa.me/201023778863" target="_blank" style="display: inline-flex; align-items: center; justify-content: center; width: 50px; height: 50px; border-radius: 50%; background: rgba(255,255,255,0.1); color: white; font-size: 24px; text-decoration: none; transition: all 0.3s; border: 2px solid rgba(255,255,255,0.2);" onmouseover="this.style.background='rgba(255,255,255,0.2)'; this.style.transform='scale(1.15) rotate(5deg)'; this.style.borderColor='rgba(255,255,255,0.4)';" onmouseout="this.style.background='rgba(255,255,255,0.1)'; this.style.transform='scale(1) rotate(0deg)'; this.style.borderColor='rgba(255,255,255,0.2)';" title="واتساب">
-                    <i class="fab fa-whatsapp"></i>
-                </a>
-            </div>
+        <!-- Social Media Links in Footer -->
+        <div
+          style="
+            margin-top: 25px;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+          ">
+          <a
+            href="https://www.instagram.com/reel/DAGRyt2sRZM/?igsh=amdnd3AyenNoZG9u"
+            target="_blank"
+            style="
+              display: inline-flex;
+              align-items: center;
+              justify-content: center;
+              width: 50px;
+              height: 50px;
+              border-radius: 50%;
+              background: rgba(255, 255, 255, 0.1);
+              color: white;
+              font-size: 24px;
+              text-decoration: none;
+              transition: all 0.3s;
+              border: 2px solid rgba(255, 255, 255, 0.2);
+            "
+            onmouseover="
+              this.style.background = 'rgba(255,255,255,0.2)';
+              this.style.transform = 'scale(1.15) rotate(5deg)';
+              this.style.borderColor = 'rgba(255,255,255,0.4)';
+            "
+            onmouseout="
+              this.style.background = 'rgba(255,255,255,0.1)';
+              this.style.transform = 'scale(1) rotate(0deg)';
+              this.style.borderColor = 'rgba(255,255,255,0.2)';
+            "
+            title="إنستجرام">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a
+            href="https://www.facebook.com/share/1Ge62YGXR8/"
+            target="_blank"
+            style="
+              display: inline-flex;
+              align-items: center;
+              justify-content: center;
+              width: 50px;
+              height: 50px;
+              border-radius: 50%;
+              background: rgba(255, 255, 255, 0.1);
+              color: white;
+              font-size: 24px;
+              text-decoration: none;
+              transition: all 0.3s;
+              border: 2px solid rgba(255, 255, 255, 0.2);
+            "
+            onmouseover="
+              this.style.background = 'rgba(255,255,255,0.2)';
+              this.style.transform = 'scale(1.15) rotate(5deg)';
+              this.style.borderColor = 'rgba(255,255,255,0.4)';
+            "
+            onmouseout="
+              this.style.background = 'rgba(255,255,255,0.1)';
+              this.style.transform = 'scale(1) rotate(0deg)';
+              this.style.borderColor = 'rgba(255,255,255,0.2)';
+            "
+            title="فيسبوك">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a
+            href="https://wa.me/201023778863"
+            target="_blank"
+            style="
+              display: inline-flex;
+              align-items: center;
+              justify-content: center;
+              width: 50px;
+              height: 50px;
+              border-radius: 50%;
+              background: rgba(255, 255, 255, 0.1);
+              color: white;
+              font-size: 24px;
+              text-decoration: none;
+              transition: all 0.3s;
+              border: 2px solid rgba(255, 255, 255, 0.2);
+            "
+            onmouseover="
+              this.style.background = 'rgba(255,255,255,0.2)';
+              this.style.transform = 'scale(1.15) rotate(5deg)';
+              this.style.borderColor = 'rgba(255,255,255,0.4)';
+            "
+            onmouseout="
+              this.style.background = 'rgba(255,255,255,0.1)';
+              this.style.transform = 'scale(1) rotate(0deg)';
+              this.style.borderColor = 'rgba(255,255,255,0.2)';
+            "
+            title="واتساب">
+            <i class="fab fa-whatsapp"></i>
+          </a>
         </div>
+      </div>
     </footer>
 
     <script src="js/script.js"></script>
-</body>
+  </body>
 </html>

@@ -902,3 +902,78 @@ section {
         grid-template-columns: 1fr;
     }
 }
+
+
+.menu-section {
+    background: #fffaf0;
+    padding: 20px 0 30px;
+    text-align: center;
+}
+
+.menu-section .section-title {
+    margin-bottom: 10px;
+}
+
+.menu-section .section-intro,
+.menu-hint {
+    font-size: 1.1rem;
+    color: #555;
+    margin: 10px 0 25px;
+    font-weight: 500;
+}
+
+.menu-images-scroller {
+    width: 100%;
+    overflow-x: auto;           /* يسمح بالسحب الأفقي */
+    scroll-behavior: smooth;    /* سحب ناعم */
+    -webkit-overflow-scrolling: touch; /* سحب أفضل على الموبايل */
+    padding: 15px 0;
+    scrollbar-width: thin;      /* لفايرفوكس */
+    scrollbar-color: #673ab7 #f0e8ff;
+}
+
+.menu-images-scroller::-webkit-scrollbar {
+    height: 8px;
+}
+
+.menu-images-scroller::-webkit-scrollbar-track {
+    background: #f0e8ff;
+    border-radius: 10px;
+}
+
+.menu-images-scroller::-webkit-scrollbar-thumb {
+    background: #673ab7;
+    border-radius: 10px;
+}
+
+.menu-images-track {
+    display: flex;
+    flex-wrap: nowrap;          /* مهم: يخليهم في سطر واحد */
+    gap: 15px;                  /* مسافة بين الصور */
+    padding: 0 20px;            /* مسافة من الجوانب */
+}
+
+.menu-images-track img {
+    height: 480px;              /* ارتفاع ثابت – غيّره حسب اللي يناسبك */
+    width: auto;                /* يحافظ على النسبة */
+    object-fit: contain;        /* الصورة كاملة بدون قص */
+    border-radius: 12px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+    flex-shrink: 0;             /* يمنع تصغير الصور */
+    transition: transform 0.25s ease;
+}
+
+.menu-images-track img:hover {
+    transform: scale(1.04);
+}
+
+/* للموبايل - ارتفاع أصغر شوية */
+@media (max-width: 768px) {
+    .menu-images-track img {
+        height: 360px;
+    }
+
+    .menu-hint {
+        font-size: 1rem;
+    }
+}
